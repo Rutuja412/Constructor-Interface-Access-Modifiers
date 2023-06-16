@@ -19,6 +19,17 @@ namespace Constructor_Interface_AccessModifiers
             rectangle1.Draw();
             Circle circle = new Circle();
             circle.Draw();
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Access Modifiers");
+            AccessModifiers access = new AccessModifiers();
+            Console.WriteLine("Name= " + access.name);//Public
+             // Console.WriteLine(access.LastName);//Private
+             
+            Derived derive = new Derived();//protected
+            derive.Print();
+            Console.WriteLine("Company Name =" + access.CompanyName);
+            access.PrivateModiDemo();
+
         }
     }
 }
